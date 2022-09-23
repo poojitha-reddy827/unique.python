@@ -1,0 +1,67 @@
+#Binary equivalent of a number using recursion
+#def convert(x):
+ #   if x==1:
+  ## elif x==2:
+    #    return 10
+def convert(a):
+    if (a>1): 
+        convert(a//2)
+    print(a%2,end="")
+
+a=int(input())
+convert(a)
+
+#Fibonacci Series
+def fibo(n):
+    if n==1:
+        return 0
+    elif n==2:
+        return 1
+    else:
+        return(fibo(n-1)+fibo(n-2))
+        
+n=int(input())
+for i in range (1,n+1):
+    n=fibo(i)
+    print(n)
+    
+#Odd or Even
+def evo(x):
+    if x%2==0:
+        return "Even!"
+    else:
+        return "Odd!"
+
+def eveno(x):
+    if x==0:
+        return "Even!"
+    elif x==1:
+        return "Odd!"
+    else:
+        return eveno(x-2)
+    
+
+x=int(input())
+print(eveno(x))
+
+#Factorial
+def fact(n):
+    if n==0 or n==1:
+        return 1
+    elif n==2:
+        return 2
+    else:
+        return (n*fact(n-1))
+
+n=int(input())
+print(fact(n))
+
+#Decimal to Binary
+def convert(a):
+    if (a>1): 
+        convert(a//2)
+    print(a%2,end="")
+
+a=int(input())
+convert(a)
+
